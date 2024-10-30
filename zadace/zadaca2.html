@@ -2,10 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="Sandra Sojčić">
+    <title>Zadaca 2</title>
 </head>
 <body>
-    
+    <table border="1">
+        <tr>
+            <th>Ponedjeljak</th>
+            <th>Utorak</th>
+            <th>Srijeda</th>
+            <th>Cetvrtak</th>
+            <th>Petak</th>
+            <th colspan="2">Užina</th>
+        </tr>
+
+        <tr>
+            <td>Hrvatski</td>
+            <td>Likovni</td>
+            <td rowspan="2">Glazbeni</td>
+            <td>TZK</td>
+            <td>Vjeronauk</td>
+            <td>1.a</td>
+            <td>1.b</td>
+            
+        </tr>
+        <tr>
+            <td>Matematika</td>
+            <td>Sat razrednika</td>
+            <td>Glazbeni</td>
+            <td>Matematika</td>
+            
+        </tr>
+        <tr>
+            <td>Informatika</td>
+            <td>INA</td>
+            <td>Priroda</td>
+            <td>Engleski</td>
+            <td>Hrvatski</td>
+        </tr>
+        <tr>
+            <td>Matematika</td>
+            <td>Informatika</td>
+            <td>Likovni</td>
+            <td>Priroda</td>
+            <td>Sat razrednika</td>
+
+        </tr>
+        <tr>
+            <td>Slobodno</td>
+            <td>Dopunska Mat</td>
+            <td>Sportska </td>
+            <td>Dodatna Mat</td>
+        </tr>
+        
+        
+    </table>
+    <br>
+    <tr>OBRAZAC ZA PRIJAVU</tr>
+    <br>
+    <br>
+        <form action="" method="get">
+        <label for="name"> Unesi svoje ime:</label>
+        <input type="text" id="name"> <br>
+        <label for="prezime"> Unesi prezime:</label>
+       <input type="text" name="prezime" id="prezime" placeholder="unesi prezime" maxlength="20" size="10"> <br>
+      <label >Unesi password:</label>
+       <input type="password"> <br>
+       <br>
+       <br>
+       <label>Izaberi ulogu</label> <br>
+    <input type="radio" name="uloga" id="Guest">
+    <label for="Guest">Guest</label><br>
+    <input type="radio" name="uloga" id="Admin">
+    <label for="Admin">Admin</label><br>
+    <input type="submit"> <input type="reset">
+    <br>
+    <br>
+    <h2>VIDEO I AUDIO</h2>
+    <br>
+    <br>
+    <video width="320" height="240" controls>
+        <source src="puppy.mp4">
+        </video> <br>
+        
+        <audio controls>
+            <source src="test-audio.ogg">
+            </audio>
+    <br>
+
+          
+       
 </body>
 </html>
