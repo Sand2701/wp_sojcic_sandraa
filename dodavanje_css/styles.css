@@ -1,0 +1,49 @@
+/* Univerzalni selektor */
+* {
+    font-family: "Montserrat", sans-serif;
+}
+/* element slektor */
+h3{
+    color:darkgoldenrod;
+    background-color: aqua;
+}
+
+h1 {
+    color:whitesmoke;
+}
+
+h4{
+    color:#e820bd ;
+}
+
+p{
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+div {
+    width: 400px;
+    height: 400px;
+    background-color:beige;
+    text-align: center;
+}
+
+
+/* Ovo su klase */ovo su klase/ /* selektor klase */ shift plus alt i A dobijemo kad oznacimo selektor klase 
+.naslov{
+   color: blueviolet; 
+}
+alt shift dobijemo ovo s zvijezdicama
+/* id */
+.rgb{
+    color: rgb(108, 11, 11);
+}
+
+.amet {
+    background-color: blueviolet;
+}
+/* selektor id */
+#naslov1 {
+    color: cyan;
+}
+
