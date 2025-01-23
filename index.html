@@ -1,247 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Sandra Sojcic">
-    <title>Sandra Sojcic</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moja web stranica</title>
+  <!-- Uključivanje Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #ffe6f2; /* Svijetlo roza pozadina */
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      background-color: #ff4d94; /* Tamno roza za navigaciju */
+    }
+    .navbar a {
+      color: white !important;
+    }
+    h1, h2 {
+      color: #ff66b2; /* Roza boja za naslove */
+    }
+    .project-card {
+      background-color: #ffb3d9; /* Svijetlo roza za kartice */
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .project-card img {
+      border-radius: 10px;
+    }
+    .project-card .card-body {
+      text-align: center;
+    }
+    .btn-custom {
+      background-color: #ff66b2;
+      color: white;
+      border-radius: 5px;
+      text-transform: uppercase;
+    }
+    .btn-custom:hover {
+      background-color: #ff3385;
+    }
+    footer {
+      background-color: #ff4d94;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <!-- Naslovi -->
-    <h1>Naslov 1</h1>
-    <h2>Naslov 2</h2>
-    <h3>Naslov 3</h3>
-    <h4>Naslov 4</h4>
-    <h5>Naslov 5</h5>
-    <h6>Naslov 6</h6>
 
-    <!-- Paragrafi -->
-    <p>Ovo je prvi sat <br>web programiranja.</p>
+  <!-- Navigacija -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Moja web stranica</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Početna</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">O meni</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Zadaće</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <hr>
+  <!-- Hero sekcija -->
+  <div class="container text-center mt-5">
+    <h1>Dobrodošli na moju web stranicu!</h1>
+    <p>Ovdje možete vidjeti moje zadaće.</p>
+  </div>
 
-    <p><strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit. Nullam at massa quis orci commodo rutrum.
-     Vestibulum facilisis quis elit gravida dapibus. <em>Proin dignissim,</em>  lacus non dictum volutpat,
-    lectus tellus vestibulum urna, <i>quis feugiat</i> ante libero tincidunt tellus. Suspendisse dignissim 
-    tincidunt orci, non ultrices urna <i>semper vitae.</i> Praesent non ante ut tortor malesuada porta eget non nulla. 
-    Nunc ultrices enim in vestibulum euismod. Sed in nisi mauris. Fusce sodales sagittis imperdiet. 
-    Phasellus metus mauris, pharetra ut pellentesque nec, rutrum a nisl. Vestibulum non justo tincidunt
-    eros gravida lobortis a quis urna. Orci varius natoque penatibus et magnis dis parturient montes,
-    nascetur ridiculus mus. Vestibulum in finibus est. Aenean nec facilisis metus. Aliquam egestas arcu
-    at orci tincidunt, nec cursus nisl maximus. Quisque eu sapien enim. </p>
+  <!-- Zadaće (Projekti) -->
+  <div class="container mt-5">
+    <h2 class="text-center">Moje zadaće</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <!-- Zadaća 1 -->
+      <div class="col">
+        <div class="card project-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyJxeBu_xcuUDvLSjn-bHqqGWVnV3l5wuv-Q&s" class="card-img-top" alt="zadaca 1">
+          <div class="card-body">
+            <h5 class="card-title">Zadaća 1</h5>
+            <p class="card-text">Ovdje možete vidjeti recept za ukusnu krem juhu od gljiva.</p>
+            <a href="zadace/zadaca1.html" class="btn btn-custom">Saznaj više</a>
+          </div>
+        </div>
+      </div>
+      <!-- Zadaća 2 -->
+      <div class="col">
+        <div class="card project-card">
+          <img src="https://image.isu.pub/130917195737-27a0eb97b8120d0a4729e85461fa4618/jpg/page_1_thumb_large.jpg" class="card-img-top" alt="Zadaća 2">
+          <div class="card-body">
+            <h5 class="card-title">Zadaća 2</h5>
+            <p class="card-text">Ovdje možete vidjeti školski raspored i obrazac za prijavu.</p>
+            <a href="zadace/zadaca2.html" class="btn btn-custom">Saznaj više</a>
+          </div>
+        </div>
+      </div>
+      <!-- Zadaća 3 -->
+      <div class="col">
+        <div class="card project-card">
+          <img src="https://i.ytimg.com/vi/tZ_BlVk7_HE/maxresdefault.jpg" class="card-img-top" alt="Zadaća 3">
+          <div class="card-body">
+            <h5 class="card-title">Zadaća 3</h5>
+            <p class="card-text">Ovdje se nalazi kratki sadržaj lektire Koko u Parizu.</p>
+            <a href="zadace/zadaca3.html" class="btn btn-custom">Saznaj više</a>
+          </div>
+        </div>
+      </div>
+      <!-- Zadaća 4 -->
+      <div class="col">
+        <div class="card project-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDhIj5kjchrQuKt1XAYHPavjON6lBkU88I4w&s" class="card-img-top" alt="Zadaća 4">
+          <div class="card-body">
+            <h5 class="card-title">Zadaća 4</h5>
+            <p class="card-text">Ovdje se nalaze podaci o gradovima i zastava Švicarske.</p>
+            <a href="zadace/zadaca5.html" class="btn btn-custom">Saznaj više</a>
+          </div>
+        </div>
+      </div>
+      <!-- Zadaća 5 -->
+      <div class="col">
+        <div class="card project-card">
+          <img src="https://miss7zdrava.24sata.hr/media/img/04/b7/ce55c165139d9f2455cf.jpeg" class="card-img-top" alt="Zadaća 5">
+          <div class="card-body">
+            <h5 class="card-title">Zadaća 5</h5>
+            <p class="card-text">Na ovoj stranici možete pronaći recepte za najfiniji ručak.</p>
+            <a href="zadace/zadaca5.html" class="btn btn-custom">Saznaj više</a>
+          </div>
+        </div>
+        <!-- Zadaća 6 -->
+      <div class="col">
+        <div class="card project-card">
+          <img src="https://image.spreadshirtmedia.net/image-server/v1/products/T1459A839PA4459PT28D195574202W8333H10000/views/1,width=800,height=800,appearanceId=839,backgroundColor=F2F2F2/number-10-sticker.jpg" class="card-img-top" alt="Zadaća 6">
+          <div class="card-body">
+            <h5 class="card-title">Zadaća 6</h5>
+            <p class="card-text">Na ovoj stranici možete pronaći recepte za najfiniji ručak.</p>
+            <a href="zadace/zadaca6.html" class="btn btn-custom">Saznaj više</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Liste -->
-    <p>Dani u tjednu:</p>
-    <ul type="square">
-        <li>Ponedjeljak</li>
-        <li>Utorak</li>
-        <li>Srijeda</li>
-        <li>Četvrtak</li>
-    </ul>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Sandra Sojčić. Sva prava pridržana.</p>
+  </footer>
 
-    <p>Kolegiji</p>
-    <ol type="a">
-        <li>Web programiranje</li>
-        <li>Kineziologija</li>
-        <li>Metodika</li>
-        <li>Didaktika</li>
-    </ol>
-
-    <dl>
-        <dt>Struja</dt>
-        <dd>usmjereno gibanje elektrona kroz vodič</dd>
-        <dt>Napon</dt>
-        <dd>Razlika potencijala</dd>
-    </dl>
-
-    <hr>
-    <h1>Moji najbolji filmovi</h1>
-    <h2>Moja tri najbolja filma</h2>
-    <hr>
-    <h3>Notebook</h3>
-    <p>Moj najbolji anime.</p>
-    <h3>Ex Machina</h3>
-    <p>Dobar sci-fi film.</p>
-    <h3>Drive</h3>
-    <p>Jako lijep film.</p>
-
-   <!-- Slike ili img element -->
-   <h3>Ubacivanje slika s web stranice</h3>
-    <img src="https://www.unisb.hr/wp-content/uploads/design/banner_logo.png" width="450" alt="logo">
-    <img src="https://www.unisb.hr/wp-content/uploads/design/logo_s_f.png" width="450" alt="logo">
-    <!-- anchor element ili a element -->
-    <h3>linkovi</h3>
-   <a href="https://www.unisb.hr/" target="_blank"><img src="https://www.unisb.hr/wp-content/uploads/design/banner_logo.png" width="450" alt="logo"></a>
-
-   
-   <br>
-   <a href="linkovi/link1.html">link1</a>
-   <br>
-   <a href="linkovi/link2.html">link2</a>
-
-   <a href="linkovi/link1.html">link 1</a>
-    <a href="linkovi/link2.html">link 2</a>
-
-   <!-- zadace -->
-<p> <strong>Zadace iz web programiranja</strong></p>
-<ul type="circle">
-
-    <li><a href="zadace/zadaca1.html">Zadaca1</a></li>
-    <li><a href="zadace/zadaca2.html">Zadaca2 <a></li>
-    <li>Zadaca3</li>
-    <li>Zadaca4</li>
-    <li>Zadaca5</li>
-</ul>
-
- <br>
-
- <!-- tablice -->
-
- <h3>Tablice u HTMLu</h3>
- <table border="1">
-    <tr>
-        <th>Ponedjeljak</th>
-        <th>Utorak</th>
-        <th>Srijeda</th>
-    </tr>
-    <tr>
-        <td>Hrvatski</td>
-        <td>Matematika</td>
-        <td>Engleski</td>
-
-    </tr>
-
-    <tr>
-        <td>Hrvatski</td>
-        <td>Matematika</td>
-        <td>Engleski</td>
-
-    </tr>
-</table>
-
-   <br>
-
-    <table border="1">
-        <tr>
-            <th colspan="2">Ime</th>
-            <th>lorem</th>
-        </tr>
-        <tr>
-            <td>lorem</td>
-            <td>lorem</td>
-            <td>lorem</td>
-        </tr>
-        <tr>
-            <td>lorem</td>
-            <td>lorem</td>
-            <td>lorem</td>
-        </tr>
-        <tr><td>lorem</td>
-            <td>lorem</td>
-            <td>lorem</td>
-        </tr>
-        <tr>
-            <td>lorem</td>
-            <td>lorem</td>
-            <td>lorem</td>
-        </tr>
-
-    </table>
-
- </table>
-
- <br>
-
- <table border="1">
-    <tr>
-        <td rowspan="3">April</td>
-        <td>lorem</td>
-        <td>lorem</td>
-    </tr>
-    <tr>
-        <td>lorem</td>
-        <td>lorem</td>
-    </tr>
-    <tr>
-        <td>lorem</td>
-        <td>lorem</td>
-    </tr>
-    <tr>
-        <td>lorem</td>
-        <td>lorem</td>
-        <td>lorem</td>
-    </tr>
-    <tr>
-        <td>lorem</td>
-        <td>lorem</td>
-        <td>lorem</td>
-    </tr>
-</table>
-
-<br>
-
-<table border="1">
-   <tr>
-       <th>No.</th>
-       <th>Full name</th>
-       <th>Position</th>
-       <th>Salary</th>
-       <th>Taype</th>
-   </tr>
-   <tr>
-       <th>1.</th>
-       <Td>Bill gate</Td>
-       <td>founder microsoft</td>
-       <td>$1000</td>
-       <td rowspan="4">company founder</td>
-   </tr>
-   <tr>
-       <th>2.</th>
-       <Td>stave jobs</Td>
-       <td> founder apple</td>
-       <td>$1200</td>
-   </tr>
-   <tr>
-       <th>3.</th>
-       <Td>lary page</Td>
-       <td>founder google</td>
-       <td>$1100</td>
-   </tr>
-   <tr>
-       <th>4.</th>
-       <Td>mark zuckemberg</Td>
-       <td>founder facebook</td>
-       <td>$1300</td>
-   </tr>
-
-</table>
-
-<br>
-
-<table border="1">
-   <tr>
-       <th colspan="3">2022</th>
-   </tr>
-   <tr>
-   <td>lorem</td>
-   <td>lorem</td>
-   <td>lorem</td>
-</tr>
-<tr>
-    <td colspan="3">fiesta</td>
-
-</tr>
-<tr>
-</tr>
-</table>
-
-<br>
-<!-- HTML forme -->
-
-<h3>HTML forme</h3>
-<form action="" method="get">
-    <label for="name"> Unesi svoje ime:</label>
-    <input type="text" id="name"> <br>
-    <label for="prezime"> Unesi prezime:</label>
-   <input type="text" name="prezime" id="prezime" placeholder="unesi prezime" maxlength="20" size="10"> <br>
-  <label >unesi paswor
+  <!-- Uključivanje Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

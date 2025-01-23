@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recepti</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #ff8cc7;
+            color: white;
+            padding: 1em;
+            text-align: center;
+            font-size: 2em;
+        }
+        .container {
+            padding: 2em;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .recipes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .recipe {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+        .recipe img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .recipe h2 {
+            color: #333;
+            margin-top: 0.5em;
+        }
+        .recipe p {
+            color: #555;
+        }
+        
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(12, auto);
+            gap: 10px;
+            margin-top: 2em;
+        }
+
+        .item-a {
+            grid-column: span 12;
+            background-color: #f5bdd7;
+            padding: 1em;
+            text-align: center;
+        }
+        .item-b {
+            grid-column: span 8;
+            background-color: #ffecb3;
+            padding: 1em;
+        }
+        .item-c {
+            grid-column: span 4;
+            background-color: #fff8e1;
+            padding: 1em;
+        }
+
+        @media (max-width: 480px) {
+            .recipes {
+                flex-direction: column;
+            }
+            .grid-layout {
+                grid-template-columns: 1fr;
+            }
+            .item-a, .item-b, .item-c {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Moji Recepti</h1>
+    </header>
+
+    <div class="container">
+        <div class="recipes">
+            <div class="recipe">
+                <img src="https://finirecepti.net.hr/wp-content/uploads/2015/02/burek-od-sira.jpg" alt="burek">
+                <h2>Burek sa sirom</h2>
+                <p>Ukusni domaći burek sa sirom.</p>
+            </div>
+            <div class="recipe">
+                <img src="https://recepti-api.index.hr/img/preview/large/recipe/8a7961f5-5849-4b12-8b4a-e3fca5d092d9/shutterstock_1615542163.jpg" alt="rizoto">
+                <h2>Rižoto</h2>
+                <p>Kremasti povrtni rižoto.</p>
+            </div>
+            <div class="recipe">
+                <img src="https://krenizdravo.dnevnik.hr/wp-content/uploads/2022/05/Popecci-od-tikvica-2.jpg" alt="popecci">
+                <h2>Popečci od tikvica</h2>
+                <p>Ukusni popečci od tikvica prženi u ulju.</p>
+            </div>
+        </div>
+
+        <div class="grid-layout">
+            <div class="item-a"><em>Dobrodošli u svijet ukusnih recepata koji će obogatiti vašu kuhinju!</em></div>
+            <div class="item-b">Želite naučiti tajne vrhunskih kuhara? Pogledajte naše savjete o tehnikama pripreme, odabiru sastojaka i stilizaciji jela kako biste svaki obrok učinili posebnim.</div>
+            <div class="item-c"><strong>Savjet dana:</strong> Ulje za prženje dodajte na prethodno zagrijanu tavu, i tako spriječite ljepljenje namirnica za dno.</div>
+        </div>
+    </div>
+</body>
+</html>
